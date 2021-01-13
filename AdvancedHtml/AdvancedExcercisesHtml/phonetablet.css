@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+header {
+    background-color: blue;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+}
+
+nav {
+    background-color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    background-color: pink;
+    width: 200px;
+    height: 50px;
+    margin-top: 2px;
+    text-align: center;
+    float: left;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+    display: block;
+    line-height: 50px;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+#cf.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+#cf.clearfix:after {
+    clear: both;
+}
+
+#cf.clearfix {
+    *zoom: 1;
+
+}
+
+#burger {
+    font-size:40px;
+    opacity: 0%;
+}
+
+
+.proto{
+    width: 30%;
+    float:left;
+    text-align: center;
+}
+
+.deutero{
+    width:30%;
+    float:left;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
+
+.trito{
+    width:20%;
+    float:left;
+    text-align: center;
+}
+
+.tetarto{
+    width:20%;
+    float:left;
+}
+
+.tetarto img{
+
+    width: 100%;
+}
+
+@media only screen and (max-width:750px){
+    header{
+        background-color: red;
+
+    }
+
+    .proto, .deutero, .trito, .tetarto{
+        width: 50%;
+
+    }
+
+    nav ul li{
+        width: 100%;
+    }
+    #burger {
+        font-size:40px;
+        opacity: 100%;
+    }
+    
+
+}
+

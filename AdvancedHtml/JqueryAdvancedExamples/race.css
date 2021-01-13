@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#dromos {
+    background: url("road.jpg") repeat-x;
+    height: 300px;
+    margin: 50px;
+    position: relative;
+}
+
+#dromos img {
+    display: block;
+    position: absolute;
+}
+
+#car1 {
+    top: 10px;
+    left: 10px;
+}
+
+#car2 {
+    left: 10px;
+    top: 180px;
+}
+
+#race {
+    background-color: rgb(89, 133, 7);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin: 20px 2px;
+}
+
+#reset {
+    background-color: rgb(133, 7, 13);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin: 20px 2px;
+}

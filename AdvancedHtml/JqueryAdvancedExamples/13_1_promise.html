@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+    <style>
+        div {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    <button> START</button>
+    <p>Παμε.... </p>
+    <div></div>
+    -->
+    <h3>περιεχόμενα αρχείου</h3>
+    <hr>
+    <section id="text">
+
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+
+        /*
+                $("button").on("click", function() {
+
+                    $("p").append("Αρχισαμε..");
+
+                    $("div").fadeIn(1000).delay(2000).fadeOut(1000);
+
+                    $("div").promise().done(function() {
+                        $("p").append("τελειώσαμε...")
+                    });
+
+
+                });*/
+
+        $("#text").load("pelates.txt");
+
+
+    }); //ready
+</script>
+
+</html>

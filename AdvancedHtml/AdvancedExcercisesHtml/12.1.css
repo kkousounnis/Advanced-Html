@@ -1,0 +1,102 @@
+#box {
+    width: 150px;
+    height: 150px;
+    background-color: #f3c;
+    animation: yolo 3s linear infinite;
+    transform: scaleY(2);
+}
+
+#kouti {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    position: relative;
+    background-color: rgb(9, 199, 66);
+    animation: lola 2s infinite;
+    transform: skew(20deg);
+}
+
+#koutaki {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+    background-color: rgb(95, 193, 211);
+    animation: svino 2s infinite;
+    transform: rotate(20deg);
+    animation: roundmotion 5s linear infinite;
+}
+
+#koutaki:hover{
+
+    transform: rotate(130deg);
+
+}
+
+
+/* animation rules */
+
+@keyframes svino {
+    0% {
+        color: black;
+    }
+    50% {
+        color: rgb(95, 193, 211);
+    }
+    100% {
+        color: black;
+    }
+}
+
+@keyframes lola {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 300px;
+        top: 0px;
+    }
+    50% {
+        left: 300px;
+        top: 300px;
+    }
+    75% {
+        left: 0px;
+        top: 300px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes yolo {
+    0% {
+        background-color: #f3c;
+    }
+    25% {
+        background-color: blue;
+        width: 300px;
+    }
+    50% {
+        background-color: rgb(32, 119, 10);
+    }
+    75% {
+        background-color: rgb(236, 240, 16);
+    }
+    100% {
+        background-color: #f3c;
+    }
+}
+
+@keyframes roundmotion{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#flip {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    transition: all 0.5s linear;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    position: absolute;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+#flip:hover {
+    transform: rotateY(180deg);
+}
+
+.hidden {
+    height: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+
+#first:target {
+    height: 100px;
+}
+
+nav{
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+ul li {
+
+    width:120px;
+    height: 20px;
+    background-color: yellow;
+    border:1px solid black;
+}
+
+ul li:nth-child(1),
+ul li:nth-child(2){
+
+    border-bottom: none;
+}
+
+ul li a {
+
+    width:120px;
+    height:20px;
+    display: block;
+    color: black;
+    text-decoration:none;
+    background-color: yellow;
+}
+
+#first:target{
+
+    height: 100px;
+}
+
+#second:target{
+
+    height: 100px;
+}
+
+#third:target{
+
+    height: 100px;
+}

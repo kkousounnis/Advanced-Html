@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(221, 27, 221);
+            margin: 0 auto;
+            text-align: center;
+            line-height: 100px;
+            border: 3px solid rgb(143, 33, 143);
+            position: relative;
+        }
+
+        #arrows {
+            width: 250px;
+            height: 250px;
+            background-color: grey;
+            border-radius: 150px;
+            margin: 300px auto;
+            position: relative;
+        }
+
+        div button {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            position: absolute;
+            font-size: 24px;
+        }
+
+        #left,
+        #right {
+            top: 50px;
+            margin-top: -20px;
+        }
+
+
+        #left {
+            left: 10px;
+        }
+
+        #right {
+            right: 10px;
+        }
+
+        #down,
+        #up {
+            left: 50%;
+            margin-left: -25px;
+        }
+
+
+
+        #down {
+            bottom: 0;
+            margin-bottom: 10px;
+        }
+
+        #up {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>JQuery Game</h2>
+
+    <div class="box">Player</div>
+
+    <div id="arrows">
+        <button id="left">&larr;</button>
+        <button id="up">&uarr;</button>
+        <button id="right">&rarr;</button>
+        <button id="down">&darr;</button>
+    </div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#left").click(function(){
+        $(".box").animate({
+            left:"-=40px"
+        });
+    });
+
+    $("#right").click(function(){
+        $(".box").animate({
+            left:"+=40px"
+        });
+    });
+
+    $("#up").click(function(){
+        $(".box").animate({
+            bottom:"+=40px"
+        });
+    });
+
+    $("#down").click(function(){
+        $(".box").animate({
+            top:"+=40px"
+        });
+    });
+});
+</script>
+
+</html>

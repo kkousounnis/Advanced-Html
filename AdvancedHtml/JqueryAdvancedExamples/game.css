@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(194, 59, 183);
+    margin: 100px auto;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid #a7f;
+    position: relative;
+}
+
+#arrows {
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    margin: 300px auto;
+    position: relative;
+    border-radius: 150px;
+}
+
+div button {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    font-size: 24px;
+    border-radius: 100%;
+}
+
+div button:focus {
+    outline: none;
+}
+
+#left,
+#right {
+    top: 50%;
+    margin-top: -20px;
+}
+
+#left {
+    left: 10px;
+}
+
+#right {
+    right: 10px;
+}
+
+#down,
+#up {
+    left: 50%;
+    margin-left: -20px;
+}
+
+#down {
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+#up {
+    margin-top: 10px;
+}

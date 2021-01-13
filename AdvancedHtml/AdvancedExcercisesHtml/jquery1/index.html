@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Promise</title>
+    <style>
+        div {
+
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            margin-top: 10px;
+            margin-left: 20px;
+            display:none;            
+        }
+    </style>
+</head>
+
+<body>
+    <button> START </button>
+    <p>Pame ...</p>
+    <div> </div>
+    <div id="text">
+
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+        $("button").on("click", function () {
+
+            $("p").append("Arxisame..");
+            $("div").fadeIn(1000).delay(2000).fadeOut(1000);
+            $("div").promise().done(function(){
+                $("p").append("teliosame");
+            });
+
+            $('#text').load("text.txt");
+        });
+
+
+    });
+</script>
+
+</html>

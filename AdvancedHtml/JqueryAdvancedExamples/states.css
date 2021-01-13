@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ccf;
+}
+
+#states {
+    margin: 30px auto;
+}
+
+th,
+td {
+    padding: 4px 2px;
+    width: 100px;
+    height: 40px;
+}
+
+.epikefalida {
+    background-color: rgb(241, 91, 32);
+}
+
+.chroma_odd {
+    background-color: #fcc;
+}
+
+.chroma_even {
+    background-color: #f6d1d8;
+}
+
+.chroma {
+    background-color: #ccf;
+}

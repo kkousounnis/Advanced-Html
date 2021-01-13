@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#kouti {
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    overflow: scroll;
+}
+
+section {
+    margin-left: 20px;
+}
+
+ol li:first-child {
+    color: red;
+}
+
+ol li:nth-child(odd) {
+    color: yellow;
+}
+
+ol li:nth-child(3n) {
+    background-color: yellow;
+}
+
+input:focus {
+    background-color: pink;
+}
+
+input[type="email"]:invalid {
+    background-color: yellow;
+}
+
+#box1 {
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    float: left;
+}
+
+#box2 {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(39, 199, 52);
+    float: left;
+}
+
+#box3 {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(15, 55, 187);
+    float: left;
+}
+
+footer {
+    background-color: rgb(186, 202, 37);
+    height: 60px;
+    clear: both;
+}
+
+nav {
+    width: 200px;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    background-color: pink;
+    width: 200px;
+    height: 50px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    background-color: pink;
+    display: block;
+    line-height: 50px;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+nav ul ul {
+    position: relative;
+    left: 200px;
+    top: -52px;
+    visibility: hidden;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+}

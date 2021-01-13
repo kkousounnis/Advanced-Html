@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="box">
+        <button onclick="count()">How many clicks</button>
+        <p id="result1"></p>
+
+        <form>
+            <p>The Name: <br><input type="text" id="key" /></p>
+            <p>The Last Name: <br><input type="text" id="value" /></p>
+            <p><input type="button" id="button" value="add Player" onclick="show()" /></p>
+            <p><a onclick="clear()">clear</a></p>
+        </form>
+    </section>
+    <section id="displayData"></section>
+    <script>
+        localStorage.setItem("player", "Diamantidis");
+        document.getElementById("result").innerHTML = localStorage.player;
+        function count() {
+            if (localStorage.clicks) {
+                localStorage.clicks = Number(localStorage.clicks) + 1;
+
+            } else {
+
+                localStorage.clicks = 1;
+            }
+            document.getElementById('result1').innerHTML = "how many times you have pressed the button <br> It was pressed " + localStorage.clicks + " times";
+        }
+        function show() {
+            let name = document.getElementById("key");
+            let lastname = document.getElementById("value");
+
+            localStorage.setItem(name, lastname);
+
+            let displayData = document.getElementById('displayData');
+            displayData.innerHTML = "";
+            for (let i = 0; i < localStorage.length; i++) {
+                let a = localStorage.key(i);
+                let b = localStorage.getItem(a);
+                displayData.innerHTML += a + " - " + b + "<br>";
+            }
+            document.getElementById("displayData").innerHTML = displayData;
+        }
+        function clear(){
+            localStorage.clear();
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

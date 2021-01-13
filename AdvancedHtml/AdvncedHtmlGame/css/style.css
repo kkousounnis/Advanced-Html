@@ -1,0 +1,37 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+}
+#dromos{
+
+    background: url(../images/road.jpeg);
+    height: 300px;
+    margin: 50px;
+}
+
+#car1, #car2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius:12px;
+}
+
+#car2{
+    bottom: 60%;
+    
+}
+
+#startRace{
+    width: 100px;
+    height:100px;
+}
+
+#resetRace{
+    width: 100px;
+    height:100px;
+}

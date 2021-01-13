@@ -1,0 +1,31 @@
+#canvas1{
+  width:600px;
+  height:300px;
+  border:1px solid black;
+
+}
+
+#canvas2{
+  width:600px;
+  height:300px;
+  border:1px solid black;
+
+}
+
+#pacman{
+  width:600px;
+  height:300px;
+  border:1px solid black;
+}
+
+#heart{
+  width:300px;
+  height:600px;
+  border:1px solid black;
+}
+
+#bubble{
+  width:300px;
+  height:300px;
+  border:1px solid black;
+}

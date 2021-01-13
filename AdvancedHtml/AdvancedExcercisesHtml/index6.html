@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Demos</title>
+    <style>
+        #first {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        #second {
+            width: 200px;
+            height: 200px;
+            border: 4px dashed red;
+        }
+
+        #third {
+            width: 200px;
+            height: 200px;
+            border: 4px double red;
+            position: relative;
+            animation: myCystomAnimation 10s infinite;
+        }
+
+        #koutaki {
+            width: 200px;
+            height: 200px;
+            border: 4px double blue;
+            position: relative;
+            animation: myCystomAnimation 10s infinite;
+        }
+
+        #koutaki p{
+            animation: myCystomAnimation1 10s infinite;
+
+        }
+
+        #fourth {
+            width: 200px;
+            height: 200px;
+            border: 4px dotted red;
+        }
+
+        @keyframes myCystomAnimation {
+            from {
+                
+                left: 80%;
+            }
+
+            to {
+                left: 0px;
+            }
+        }
+
+        @keyframes myCystomAnimation1 {
+            from {
+                
+                left: 80%;
+                opacity: 100%;
+            }
+
+            to {
+                left: 0px;
+                opacity: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="third"></div> <br>
+
+    <div id="koutaki">
+        <p> I want to fade in fade out!</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="box">
+        <form>
+            <p>The key: <br><input type="text" id="key"/></p>
+            <p>The value: <br><input type="text" id="value"/></p>
+            <p><input type="submit" id="button" value="submit"/></p>
+            <p><a href="javascript:clear()">clear</a></p>
+        </form>
+    </section>
+    <section id="displayData"></section>
+    <script>
+        function doFirst(){
+            let button = document.getElementById('button');
+            button.addEventListener('click',save,false);
+            display();
+        }
+        function save(){
+            let key = document.getElementById('key').value;
+            let value = document.getElementById('value').value;
+            localStorage.setItem(key,value);
+            display();
+            key.value="";
+            value.value = "";
+        }
+        function display(){
+            let displayData = document.getElementById('displayData');
+            displayData.innerHTML = "";
+            for(let i = 0; i<localStorage.length; i++){
+                let a = localStorage.key(i);
+                let b = localStorage.getItem(a);
+                displayData.innerHTML += a + " - " + b + "<br>";
+            }
+        }
+        function clear(){
+            localStorage.clear();
+            location.reload();
+        }
+        window.addEventListener('load',doFirst,false);
+    </script>
+</body>
+</html>

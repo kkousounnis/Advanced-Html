@@ -1,0 +1,28 @@
+header{
+    margin:50px;
+    height:200px;
+    width:1000px;
+    border: 3px solid red;
+    overflow: hidden;
+
+}
+.back{
+    background: url(back2.png);
+    width: 1360px;
+    height: 200px;
+    position: relative;
+    animation: roll 5s linear infinite;
+
+}
+
+@keyframes roll{
+    0%{
+
+        right:0;
+
+    }
+    100%{
+        right:320px;
+    }
+
+}
