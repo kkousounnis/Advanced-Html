@@ -1,2 +1,2 @@
 # Advanced-Html
-Advnced Html css Javascript Jquery projects 
+Advanced Html css Javascript Jquery projects 
