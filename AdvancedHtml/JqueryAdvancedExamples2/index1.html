@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>    
+    <h3 ></h3>
+    <h3 ></h3>    
+    <button id="btn2"> Εμφάνιση xml </button>
+
+    <table>
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Last Name</th>
+        </tr>
+        <tr>
+          <td id="num"></td>
+          <td id="firstName"></td>
+          <td id="lastName"></td>
+        </tr>
+        
+      </table>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+
+        $("#btn2").on("click", function () {
+
+
+            $.get("players.xml", function (res) {
+                $(res).find("player").each(function () {
+                    
+                    var num = $(this).find("num");
+                    var firstName = $(this).find("onoma");
+                    var lastName = $(this).find("epitheto");
+                    $("#firstName").append(firstName).append("<br>");
+                    $("#lastName").append(lastName).append("<br>");
+                    $("#num").append(num).append("<br>");
+                });
+            });
+        });
+    }); //ready
+</script>
+
+</html>

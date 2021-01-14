@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "fname": "Brad",
+        "lname": "Pitt",
+        "age": "57"
+    },
+    {
+        "id": "2",
+        "fname": "Angelina",
+        "lname": "Jolie",
+        "age": "45"
+    },
+    {
+        "id": "3",
+        "fname": "Tom",
+        "lname": "Hanks",
+        "age": "65"
+    },
+    {
+        "id": "4",
+        "fname": "Jack",
+        "lname": "Nicholson",
+        "age": "90"
+    },
+    {
+        "id": "5",
+        "fname": "Γιάννης",
+        "lname": "Στανκογλου",
+        "age": "46"
+    },
+    {
+        "id": "6",
+        "fname": "Βασίλης",
+        "lname": "Μπισμπίκης",
+        "age": "45"
+    }
+]

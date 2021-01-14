@@ -1,0 +1,38 @@
+h1 {
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: hide 2s linear infinite;
+}
+
+#slider {
+    display: none;
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    animation: slidershow 2s linear infinite;
+}
+
+
+
+@keyframes hide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 600px;
+    }
+}
+
+@keyframes sliderShow {
+
+    0%{
+        
+        background-image: url("img/1.jpeg");
+    }
+    20%{
+        background-image: url("img/2.jpeg");
+    }
+}
